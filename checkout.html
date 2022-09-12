@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Order</title>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to my first website">
+    <meta name="keyword" content="HTML,CSS,PHP,developer">
+    <script src="https://kit.fontawesome.com/04f2094a89.js" crossorigin="anonymous"></script>
+    <link href="style/css/main.css" rel="stylesheet">
+    <link href="style/css/responsive.css" rel="stylesheet" media="screen and (max-width:1300px)">
+</head>
+<body>
+
+<div class="preloader   justify-center align-center">
+    <div>
+        <span class="arrow arrow-animate">
+            <span class="arrow-item"><span class="curve"></span></span>
+                <i></i>
+            <span class="arrow-item"><span class="curve"></span></span>
+        </span>
+    </div>
+</div>
+<nav class="p-3">
+    <div class="container d-flex justify-between">
+        <a href="index.html" class="btn_primary d-flex align-center">
+            Products
+        </a>
+        <div class="btn_secondary product_show relative">
+            <i class="fa-brands fa-shopify"></i>
+            <span class="badge">0</span>
+            <div class="product_list absolute d-flex flex-column justify-between align-start">
+                <div class="item_container w-100 h-100 d-flex flex-column justify-start align-start overflow_auto">
+
+                </div>
+                <div class="payable p-2">
+                    <p class="text-gold center lh-1">Total price: <span class="text-dark"><em
+                            class="total_price"></em><em>$</em></span></p>
+                    <div class="center">
+
+                        <a class="btn_primary" href="#">Submit order</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</nav>
+
+<section id="checkout" class="py-3 px-1 mt-12">
+    <div class="container">
+        <main>
+
+        </main>
+        <aside class="p-3 sticky">
+            <div>
+                <span class="text-blue fw-7 fs-3">Total Items:</span>
+                <span class="text-dark fw-6 fs-3 ml-2 total_item"></span>
+            </div>
+            <div class="my-2">
+                <span class="text-blue fw-7 fs-3">Total Payment:</span>
+                <span class="text-dark fw-6 fs-3 ml-2 total_summary_price"></span>
+            </div>
+            <div class="mt-4 d-flex justify-between align-center">
+                <button class="btn_primary bg_green clear_database">Clear</button>
+                <button class="btn_primary bg_blue">Checkout</button>
+            </div>
+
+        </aside>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script type="module" src="javascript/checkout.js"></script>
+</body>
+</html>
